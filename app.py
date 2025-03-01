@@ -2,7 +2,6 @@ from flask import Flask, render_template_string, request, redirect, url_for
 
 app = Flask(__name__)
 
-# HTML content directly in the app
 index_html = """
 <!DOCTYPE html>
 <html lang="en">
@@ -83,7 +82,7 @@ index_html = """
 </head>
 <body>
     <form action="/submit" method="POST">
-        <h2>Student Form</h2>
+        <h2>STUDENT REGISTRATION FORM</h2>
         <div class="form-group">
             <label for="reg_no">REG NO:</label>
             <input type="text" id="reg_no" name="reg_no" required>
@@ -147,7 +146,6 @@ def home():
 @app.route('/submit', methods=['POST'])
 def submit():
     name = request.form['name']
-    # Here you could process/store the form data (e.g., save to a database)
     return render_template_string(success_html, name=name)
 
 if __name__ == '__main__':
