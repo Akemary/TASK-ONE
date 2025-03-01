@@ -1,6 +1,5 @@
 # Flask App with Docker
 
-
 ### 1. Clone the Repository (if you haven't already)
 
 ```bash
@@ -36,7 +35,7 @@ Open a browser and go to `http://localhost:5000`.
 ## Project Structure
 
 ```
-flask-docker-app/
+task_one/
 ├── Dockerfile            # Docker configuration for the app
 ├── app.py                # Main Flask application
 ├── requirements.txt      # Python dependencies
