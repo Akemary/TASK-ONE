@@ -1,4 +1,21 @@
-# Flask App with Docker
+# Flask App Containerised with Docker
+
+This repository contains a simple flask application that has the HTML content directly inside the application.<br>
+The HTML content is a student registration form that can be filled and saved<br>
+
+### app.py
+This contains code for the main Flask application.
+
+### Dockerfile
+It contains docker configarations for the application.
+
+### requirement.txt
+This contains the python dependencies
+
+### README.md
+This has all the description for the directory.
+
+### Steps for Accessing the repository
 
 ### 1. Clone the Repository (if you haven't already)
 
@@ -15,7 +32,7 @@ In the project directory, run the following command to build the Docker image:
 docker build -t task_one .
 ```
 
-This command will use the `Dockerfile` to create a Docker image with the name `flask-app`.
+This command will use the `Dockerfile` to create a Docker image with the name `task_one`.
 
 ### 3. Run the Docker Container
 
@@ -30,16 +47,3 @@ This will map port 5000 from your local machine to port 5000 inside the Docker c
 ### 4. Verify the Flask App
 
 Open a browser and go to `http://localhost:5000`. 
-
-
-## Project Structure
-
-```
-task_one/
-├── Dockerfile            # Docker configuration for the app
-├── app.py                # Main Flask application
-├── requirements.txt      # Python dependencies
-└── README.md             # This file
-```
-
-
