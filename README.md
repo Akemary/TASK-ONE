@@ -15,7 +15,7 @@ This contains the python dependencies
 ### README.md
 This has all the description for the directory.
 
-### Steps for Accessing the repository
+### Steps for Accessing the Application
 
 ### 1. Clone the Repository (if you haven't already)
 
